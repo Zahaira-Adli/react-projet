@@ -1,9 +1,9 @@
-function ProductCard(props) {
+function ProductCard({ name, price }) {
+  // <-- شوف شنو وقع هنا
   return (
-    <div className="product-card">
-      <h3>{props.name}</h3>
-      <p>الثمن: {props.price} درهم</p>
-      <button>أضف إلى السلة</button>
+    <div>
+      <h3>{name}</h3> {/* مابقيتش محتاج نكتب props. */}
+      <p>{price} درهم</p>
     </div>
   );
 }

@@ -1,5 +1,7 @@
 // App.js
-import ProductCard from "./ProductCard"; // Import the component
+import ProductCard from "./ProductCard";
+import Counter from "./Counter"; // Make sure this component exists
+import BadCounter from "./BadCounter";
 
 function App() {
   return (
@@ -7,6 +9,8 @@ function App() {
       <Welcome />
       <UserProfile />
       <ProductCard /> {/* Now using the ProductCard */}
+      <Counter />
+      <BadCounter />
     </div>
   );
 }
